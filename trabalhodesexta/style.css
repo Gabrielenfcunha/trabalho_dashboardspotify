@@ -5,18 +5,32 @@ body {
 
 }
 
-.imagem img{
-  width: 720px;
-  height: 212px;
-  margin-left: 440px;
-  margin-top: 147px;
-	border-radius: 3ch;
-  overflow: auto;
+.login_conteiner1{display: flex;
+flex-direction: column;
+height: 100vh;
+overflow-x: hidden;
 }
 
+.logo{
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.imagem img{
+  height: 42px;
+  padding: 0px 0px 6px;
+  width: 720px;
+  height: 212px;
+}
+
+div{
+  display: block;
+}
 
 .login{
-  height: 100vh;
+  height: 100ch;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,29 +39,13 @@ body {
 
 .login__conteiner{
   width: 540px;
-  height: 300px;
+  height: 350px;
   margin-left: 10px;
   margin-top: -290px;
   background-color: #fff;
   box-sizing: border-box;
   padding: 32px;
   border-radius: 9px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: bolder;
-}
-
-.login__title{
-  margin-bottom: 32px;
-}
-
-.login__from{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .login_input{
@@ -68,6 +66,7 @@ body {
   bottom: 0%;
   background: #E2E2E2;
   border-radius: 5px;
+  display: inline-flex;
 }
 
 #password.login_input {
@@ -79,6 +78,7 @@ body {
   bottom: 0%;
   background: #E2E2E2;
   border-radius: 5px;
+
 }
 
 .login_input-border{
@@ -86,19 +86,8 @@ body {
   margin-top: -30px;
   height: 1px;
   width: 100%;
-  margin-bottom: 16px;  
-}
-
-.login_input-border::after{
-  content: '';
-  display: block;
-  height: 1px;
-  width: 0;
   margin-bottom: 16px;
-}
 
-.login_input:focus + .login_input-border::after{
-  width: 100%;
 }
 
 .login_submit{
@@ -118,10 +107,6 @@ body {
   transition: .5s ease-in-out;
 }
 
-.login_submit:hover{
-  background-position: right;
-
-}
 
 .login_reset{
   font-size: 12px;
@@ -129,17 +114,18 @@ body {
   text-decoration: none;
 }
 
-.credits{
-  color: #fff;
-  height: 48px;
-  width: 592px;
-  margin-left: 498px;
-  margin-top: -100px;
+.credits p{
+  box-sizing: border-box;
   font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: inherit;
+  font-weight: 900;
   text-align: center;
+  color: #fff;
 
-}
+  margin-top: -100px;
+  letter-spacing: 0em;}
+
